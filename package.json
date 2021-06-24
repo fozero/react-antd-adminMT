@@ -12,6 +12,7 @@
     "@types/react-dom": "^17.0.0",
     "antd": "^4.16.5",
     "axios": "^0.21.1",
+    "env-cmd": "^10.1.0",
     "ramda": "^0.27.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -25,10 +26,11 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "dev": "BROWSER=none react-scripts start",
+    "dev": "env-cmd -f .env.development react-scripts start",
+    "dev:stg": "env-cmd -f .env.staging react-scripts start",
     "build": "react-scripts build",
-    "build:stg": "yarn build",
-    "build:prod": "yarn build",
+    "build:stg": "env-cmd -f .env.staging yarn build",
+    "build:prod": "env-cmd -f .env.production yarn build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

@@ -4,9 +4,12 @@ import createSagaMiddleware from 'redux-saga'
 import { rootReducer } from './rootReducer'
 import { rootSaga } from './rootSaga'
 
+const isProd = process.env.REACT_APP_ENV==='production'
+
 const sagaMiddleware = createSagaMiddleware()
 const middlewares = [sagaMiddleware]
-const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
+// 开启redux devtools调试工具
+const composeEnhancers = isProd ? compose : window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
 const store = createStore(
   rootReducer,
   composeEnhancers(applyMiddleware(...middlewares))
