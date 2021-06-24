@@ -12,6 +12,6 @@ module.exports = {
   extends: ['react-app', 'plugin:prettier/recommended'],
   plugins: ['prettier'],
   rules: {
-    'prettier/prettier': 'off'
+    'prettier/prettier': 'error'
   }
 }

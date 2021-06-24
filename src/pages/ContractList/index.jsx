@@ -1,10 +1,10 @@
-import React, { useEffect } from "react";
+import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { getContractListRequest } from "../../redux/app/actions";
+import { getContractListRequest } from '../../redux/contract/actions'
 
 const ContractList = () => {
   // TODO selector
-  const words = useSelector(({ app }) => app.words)
+  const words = useSelector(({ contract }) => contract.words)
 
   const dispatch = useDispatch()
 
@@ -21,9 +21,7 @@ const ContractList = () => {
       合同管理
       <ul>
         {words.map((item, index) => {
-          return (
-            <li key={index}>{item.display_query}</li>
-          )
+          return <li key={index}>{item.display_query}</li>
         })}
       </ul>
     </div>

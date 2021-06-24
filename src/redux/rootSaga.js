@@ -1,10 +1,4 @@
+import { combineSagas } from '../utils/sagaHelpers'
+import { contractWatcher } from './contract/saga'
 
-
-
-import { combineSagas } from "../utils/sagaHelpers";
-
-import {appWatcher} from './app/saga'
-
-export const rootSaga = combineSagas([
-  appWatcher
-])
+export const rootSaga = combineSagas([contractWatcher])

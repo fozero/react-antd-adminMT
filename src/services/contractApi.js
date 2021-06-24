@@ -1,3 +1,3 @@
-import apiClient from "./apiClient";
+import apiClient from './apiClient'
 
-export const getContractList = ()=> apiClient.get(`/api/v4/search/top_search`)
+export const getContractList = () => apiClient.get(`/api/v4/search/top_search`)

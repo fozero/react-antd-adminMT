@@ -1,8 +1,6 @@
-import { combineReducers } from "redux";
-
-
-import { appReducer } from './app/reducer'
+import { combineReducers } from 'redux'
+import { contractReducer } from './contract/reducer'
 
 export const rootReducer = combineReducers({
-  app: appReducer
+  contract: contractReducer
 })

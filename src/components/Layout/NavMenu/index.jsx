@@ -9,9 +9,12 @@ const NavMenu = () => {
     setCurrent(e.key)
   }
 
-  const handleSelect = useCallback(({ item }) => {
-    history.push(item.props.path)
-  }, [history])
+  const handleSelect = useCallback(
+    ({ item }) => {
+      history.push(item.props.path)
+    },
+    [history]
+  )
 
   return (
     <Menu
