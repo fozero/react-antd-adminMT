@@ -10,8 +10,8 @@ const App = () => {
     <Router>
       <NavMenu />
       <Switch>
-        {routes.map(({ key, path, component }) => (
-          <Route key={key} path={path} component={component} />
+        {routes.map(({ key, path, exact, component }) => (
+          <Route key={key} path={path} exact={exact} component={component} />
         ))}
       </Switch>
     </Router>

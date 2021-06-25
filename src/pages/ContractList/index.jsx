@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { getContractListRequest } from '../../redux/contract/actions'
+import { contractListSelector } from '../../redux/contract/selectors'
 
 const ContractList = () => {
-  // TODO selector
-  const words = useSelector(({ contract }) => contract.words)
+  const words = useSelector(contractListSelector)
 
   const dispatch = useDispatch()
 
