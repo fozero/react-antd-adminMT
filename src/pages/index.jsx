@@ -1,15 +1,19 @@
 import React from 'react'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect
+} from 'react-router-dom'
 
-import NavMenu from '../components/Layout/NavMenu'
 import { routes } from '../navigation'
 import './index.css'
 
 const App = () => {
   return (
     <Router>
-      <NavMenu />
       <Switch>
+        <Redirect from='/' to='/contractList' exact />
         {routes.map(({ key, path, exact, component }) => (
           <Route key={key} path={path} exact={exact} component={component} />
         ))}

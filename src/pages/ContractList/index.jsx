@@ -1,7 +1,10 @@
 import React, { useEffect } from 'react'
+import { Table } from 'antd'
 import { useDispatch, useSelector } from 'react-redux'
 import { getContractListRequest } from '../../redux/contract/actions'
 import { contractListSelector } from '../../redux/contract/selectors'
+import MainLayout from '../../components/Layout/MainLayout'
+import getContractListColumns from './contractListColumns'
 
 const ContractList = () => {
   const words = useSelector(contractListSelector)
@@ -17,14 +20,9 @@ const ContractList = () => {
   }, [])
 
   return (
-    <div>
-      合同管理
-      <ul>
-        {words.map((item, index) => {
-          return <li key={index}>{item.display_query}</li>
-        })}
-      </ul>
-    </div>
+    <MainLayout>
+      <Table columns={getContractListColumns()} dataSource={words} />
+    </MainLayout>
   )
 }
 

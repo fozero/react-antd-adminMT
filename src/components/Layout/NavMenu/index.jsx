@@ -18,6 +18,7 @@ const NavMenu = () => {
         R.prop('key', R.find(R.propEq('path', location.pathname), routes))
       ]}
       mode='horizontal'
+      theme='light'
     >
       {routes.map(({ key, path, name, showInMenu }) => {
         if (showInMenu) {
