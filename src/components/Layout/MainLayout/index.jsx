@@ -15,7 +15,7 @@ const MainLayout = ({ children }) => {
         {children}
       </Content>
       <Footer className={styles.footer}>
-        react-antd-admin ©2021 Created by fozero@126.com
+        react-antd-adminMT ©2021 Created by fozero@126.com
       </Footer>
     </Layout>
   )

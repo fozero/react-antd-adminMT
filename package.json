@@ -1,5 +1,5 @@
 {
-  "name": "react-antd-admin",
+  "name": "react-antd-adminMT",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -37,12 +37,20 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "author": "fozero@126.com",
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
       "pre-commit": "lint-staged"
     }
   },
+  "keywords": [
+    "react",
+    "redux",
+    "redux-saga",
+    "axios",
+    "antd"
+  ],
   "browserslist": {
     "production": [
       ">0.2%",

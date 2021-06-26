@@ -1,6 +1,6 @@
-# react-antd-admin
+# react-antd-adminMT
 
-> 基于react+redux+redux-saga+antd的管理控制台框架
+> An out of the box enterprise level management system , build with react+antd+redux
 
 ### 本地开发
 
