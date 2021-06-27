@@ -1,32 +1,52 @@
-# react-antd-adminMT
+# Introduction
 
-> An out of the box enterprise level management system , build with react+antd+redux
+最近因为要做一个新的管理后台项目，新公司大部分是用 vue 写的，技术栈这块也是想切到 react 上面来，所以，这次从 0 到 1 重新搭建一个 react 项目架子，需要考虑的东西的很多，包括目录结构、代码规范、请求封装等等，
+涉及内容较多，所以我分成了几个部分来记录搭建的过程：
 
-### 本地开发
+- [从 0 到 1 用 react+antd+redux 搭建一个开箱即用的企业级管理后台系列（基础篇）](https://www.cnblogs.com/fozero/p/14941977.html)
+- [从 0 到 1 用 react+antd+redux 搭建一个开箱即用的企业级管理后台系列（引入 redux）]()
+- [从 0 到 1 用 react+antd+redux 搭建一个开箱即用的企业级管理后台系列（菜单路由）]()
+- [从 0 到 1 用 react+antd+redux 搭建一个开箱即用的企业级管理后台系列（权限）]()
 
-1. 安装依赖
+[react-antd-adminMT](https://github.com/fozero/react-antd-adminMT)基于 react+antd+redux 技术栈开发的一个开箱即用的企业级管理后台模板框架
 
-```yarn install```
+### Getting started
 
-2. 本地运行
+```
+# clone the project
+git clone https://github.com/fozero/react-antd-adminMT.git
 
-```yarn dev```
+# enter the project directory
+cd react-antd-adminMT
 
-### 构建打包
+# install dependency
+yarn install
 
-1. 打包stg
+# develop
+yarn dev
+```
 
-```yarn build:stg```
+### Build
 
-2. 打包prod
+```
+# build for test environment
+yarn build:stg
 
-```yarn build:prod```
+# build for production environment
+yarn build:prod
+```
 
-### 参考文档
+### Relative Doc
 
-- [antd](https://ant.design/docs/react/introduce-cn)
-- [axios](https://github.com/axios/axios)
-- [redux](https://www.redux.org.cn/)
-- [redux-actions](https://redux-actions.js.org/)
-- [react-redux](https://react-redux.js.org/introduction/getting-started)
-- [redux-saga](https://redux-saga.js.org/docs/introduction/GettingStarted)
+- https://ant.design/docs/react/introduce-cn
+- https://github.com/axios/axios
+- https://www.redux.org.cn/
+- https://redux-actions.js.org/
+- https://react-redux.js.org/introduction/getting-started
+- https://redux-saga.js.org/docs/introduction/GettingStarted
+
+### License
+
+[MIT](https://github.com/fozero/react-antd-adminMT/blob/main/LICENSE)
+
+Copyright (c) 2021 fozero
